@@ -62,7 +62,7 @@ def make_row(i):
         "notes": ""
     }
 
-def build_seed_csv(path="parallel_seed.csv", n=200):
+def build_seed_csv(path="parallel_seed.csv", n=100):
     rows = [make_row(i) for i in range(1, n+1)]
     with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
@@ -71,4 +71,4 @@ def build_seed_csv(path="parallel_seed.csv", n=200):
     print(f"Wrote {n} rows to {path}")
 
 if __name__ == "__main__":
-    build_seed_csv(n=200)
+    build_seed_csv(n=100)
