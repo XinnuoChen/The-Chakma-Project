@@ -3,7 +3,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from peft import PeftModel
 
 BASE_MODEL = "meta-llama/Llama-3.1-8B-Instruct"
-ADAPTER_DIR = r"C:\Users\Ed\OneDrive\Desktop\The-Chakma-Project\llama31_dict_lora\adapter"
+ADAPTER_DIR = r"C:\Users\Ed\OneDrive\Desktop\The-Chakma-Project\llama31_chakgpt1_0\adapter"
 
 tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL, use_fast=True)
 if tokenizer.pad_token is None:
@@ -40,7 +40,7 @@ messages = [
     },
     {
         "role": "user",
-        "content": "What does 'Kushāsan' mean in English?\nPart of speech: n",
+        "content": "What does 'Kuji' mean in English?\nPart of speech: n",
     },
 ]
 

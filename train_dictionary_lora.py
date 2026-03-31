@@ -16,11 +16,12 @@ from trl import SFTTrainer, SFTConfig
 # =========================================================
 # CONFIG
 # =========================================================
-CSV_PATH = "chakma100200.csv"                      # your input file
-BASE_MODEL = "meta-llama/Llama-3.1-8B-Instruct" # training base model on HF
-OLLAMA_BASE = "llama3.1:8b"                     # already installed in Ollama
-OUTPUT_DIR = "./llama31_dict_lora"
-OLLAMA_MODEL_NAME = "dict-lora"
+CSV_PATH = "Final_Chakma.csv"                      # your input file
+BASE_MODEL = "google/gemma-3-4b-it" # training base model on HF
+#OLLAMA_BASE = "llama3.1:8b"  
+OLLAMA_BASE = "gemma3:4b"                
+OUTPUT_DIR = "./chemini1_0"
+OLLAMA_MODEL_NAME = "chemini1_0"
 
 SYSTEM_PROMPT = (
     "You are a concise bilingual dictionary assistant. "
@@ -33,7 +34,7 @@ SEED = 42
 TEST_SPLIT = 0.02
 MAX_LENGTH = 256
 
-NUM_EPOCHS = 3
+NUM_EPOCHS = 1
 LEARNING_RATE = 1e-4
 TRAIN_BATCH_SIZE = 1
 EVAL_BATCH_SIZE = 1
@@ -43,7 +44,7 @@ LORA_R = 16
 LORA_ALPHA = 32
 LORA_DROPOUT = 0.05
 
-PROMPT_VARIANTS_PER_ROW = 3
+PROMPT_VARIANTS_PER_ROW = 1
 
 # =========================================================
 # HELPERS
