@@ -1,0 +1,16 @@
+{
+  "gemma-base": {
+    "exact_match": 0.0,
+    "bleu": 0.21,
+    "chrf": 8.05,
+    "rouge_l": 2.81,
+    "levenshtein_sim": 17.04
+  },
+  "gemma-adapter": {
+    "exact_match": 1.72,
+    "bleu": 3.14,
+    "chrf": 13.62,
+    "rouge_l": 13.7,
+    "levenshtein_sim": 27.62
+  }
+}
