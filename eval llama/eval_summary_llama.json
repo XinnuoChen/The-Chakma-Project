@@ -1,0 +1,16 @@
+{
+  "llama-base": {
+    "exact_match": 0.0,
+    "bleu": 0.15,
+    "chrf": 10.2,
+    "rouge_l": 2.53,
+    "levenshtein_sim": 17.84
+  },
+  "llama-adapter": {
+    "exact_match": 0.49,
+    "bleu": 1.41,
+    "chrf": 14.83,
+    "rouge_l": 14.03,
+    "levenshtein_sim": 27.95
+  }
+}
