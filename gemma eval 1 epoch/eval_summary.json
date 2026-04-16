@@ -1,0 +1,24 @@
+{
+  "gemma-base": {
+    "exact_match": 0.0,
+    "bleu": 0.21,
+    "chrf": 8.05,
+    "rouge_l": 2.81,
+    "levenshtein_sim": 17.04,
+    "tok_precision": 2.49,
+    "tok_recall": 2.11,
+    "tok_f1": 2.1,
+    "bertscore_f1": 85.72
+  },
+  "gemma-adapter": {
+    "exact_match": 0.25,
+    "bleu": 0.87,
+    "chrf": 11.1,
+    "rouge_l": 11.26,
+    "levenshtein_sim": 23.81,
+    "tok_precision": 10.38,
+    "tok_recall": 9.78,
+    "tok_f1": 9.05,
+    "bertscore_f1": 86.7
+  }
+}
