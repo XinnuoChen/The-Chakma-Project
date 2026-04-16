@@ -1,0 +1,54 @@
+{
+  "gemma-base": {
+    "exact_match": 0.25,
+    "bleu": 3.19,
+    "chrf": 20.09,
+    "ter": 103.23,
+    "meteor": 9.81,
+    "rouge_l": 16.11,
+    "levenshtein_sim": 28.87,
+    "tok_precision": 13.42,
+    "tok_recall": 13.16,
+    "tok_f1": 13.03,
+    "bertscore_f1": 89.96
+  },
+  "gemma-adapter": {
+    "exact_match": 0.25,
+    "bleu": 2.66,
+    "chrf": 16.82,
+    "ter": 96.89,
+    "meteor": 7.82,
+    "rouge_l": 13.3,
+    "levenshtein_sim": 27.03,
+    "tok_precision": 12.93,
+    "tok_recall": 10.66,
+    "tok_f1": 11.2,
+    "bertscore_f1": 88.81
+  },
+  "llama-base": {
+    "exact_match": 0.25,
+    "bleu": 3.33,
+    "chrf": 20.18,
+    "ter": 109.24,
+    "meteor": 9.88,
+    "rouge_l": 15.76,
+    "levenshtein_sim": 29.09,
+    "tok_precision": 13.35,
+    "tok_recall": 12.85,
+    "tok_f1": 12.81,
+    "bertscore_f1": 89.93
+  },
+  "llama-adapter": {
+    "exact_match": 0.25,
+    "bleu": 3.99,
+    "chrf": 20.14,
+    "ter": 100.84,
+    "meteor": 11.36,
+    "rouge_l": 17.18,
+    "levenshtein_sim": 29.53,
+    "tok_precision": 16.3,
+    "tok_recall": 15.44,
+    "tok_f1": 15.45,
+    "bertscore_f1": 89.22
+  }
+}
