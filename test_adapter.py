@@ -2,8 +2,9 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from peft import PeftModel
 
-BASE_MODEL = "meta-llama/Llama-3.1-8B-Instruct"
-ADAPTER_DIR = r"C:\Users\Ed\OneDrive\Desktop\The-Chakma-Project\llama31_chakgpt1_0\adapter"
+#BASE_MODEL = "meta-llama/Llama-3.1-8B-Instruct"
+BASE_MODEL = "google/gemma-3-4b-it"
+ADAPTER_DIR = r"C:\Users\Ed\OneDrive\Desktop\The-Chakma-Project\chemini1_0\adapter"
 
 tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL, use_fast=True)
 if tokenizer.pad_token is None:
