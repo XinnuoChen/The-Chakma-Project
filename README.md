@@ -9,6 +9,8 @@ A Fine-Tuning Approach to Endangered Language Preservation and Word-Level Transl
 This project presents the first Chakma–English word-level translation system. We fine-tuned two open-weight large language models — LLaMA 3.1 8B and Gemma 3 4B — using QLoRA on a manually curated dataset of 20,206 Chakma–English word pairs extracted from a physical dictionary (Chakma, 1993) and verified by native speakers.
 
 ## Repository Structure
+
+```
 ├── train_dictionary_lora.py       # LLaMA fine-tuning script
 ├── gemma_train.py                 # Gemma fine-tuning script
 ├── test_adapter.py                # Inference/evaluation script
@@ -21,6 +23,7 @@ This project presents the first Chakma–English word-level translation system. 
 ├── chemini1_0_FV/                 # Gemma LoRA adapter weights
 ├── run_scripts/                   # Utility scripts
 └── sentence_eval_results.csv      # Sentence-level evaluation results
+```
 
 ## Models
 
