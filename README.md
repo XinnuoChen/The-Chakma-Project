@@ -11,18 +11,31 @@ This project presents the first Chakma–English word-level translation system. 
 ## Repository Structure
 
 ```
-├── train_dictionary_lora.py       # LLaMA fine-tuning script
-├── gemma_train.py                 # Gemma fine-tuning script
-├── test_adapter.py                # Inference/evaluation script
-├── Final_Chakma.csv               # Training dataset (20,206 word pairs)
-├── ChakmaBridge Verified Version.csv  # Native-speaker verified dictionary
-├── eval epoch 2/                  # LLaMA evaluation results (2 epochs)
-├── eval llama/                    # LLaMA evaluation outputs
-├── gemma eval 1 epoch/            # Gemma evaluation results
-├── llama31_dict_lora/             # LLaMA LoRA adapter weights
-├── chemini1_0_FV/                 # Gemma LoRA adapter weights
-├── run_scripts/                   # Utility scripts
-└── sentence_eval_results.csv      # Sentence-level evaluation results
+├── train_dictionary_lora.py          # LLaMA fine-tuning script
+├── gemma_train.py                    # Gemma fine-tuning script
+├── test_adapter.py                   # Inference/evaluation script
+├── eval_dictionary.py                # Dictionary-level evaluation script
+│
+├── Final_Chakma.csv                  # Training dataset (20,206 word pairs)
+├── ChakmaBridge Verified Version.csv # Native-speaker verified dictionary
+├── ChakmaBridge (1).xls              # Dictionary data (Excel format)
+├── chakma100200.csv                  # Dictionary entries (pages 100–200)
+├── parallel_seed.csv                 # Parallel seed data
+│
+├── llama31_dict_lora/                # LLaMA LoRA adapter weights
+├── llama31_chakgpt1_0/               # LLaMA model checkpoint
+├── chemini1_0/                       # Gemma trained adapter
+├── chemini1_0_FV/                    # Gemma trained adapter (final version)
+│
+├── eval epoch 2/                     # Gemma evaluation results (2 epochs)
+├── eval llama/                       # LLaMA evaluation outputs
+├── gemma eval 1 epoch/               # Gemma evaluation results (1 epoch)
+├── sentence_eval_results.csv         # Sentence-level evaluation results
+├── sentence_eval_summary.json        # Sentence-level evaluation summary
+│
+├── Ed_Open_Test/                     # Early exploration/testing
+├── run_scripts/                      # Utility scripts
+└── README.md
 ```
 
 ## Models
